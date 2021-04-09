@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>0402-apache-dubbo-remote-communication</module>
+        <module>0402-apache-dubbo-remote-communication/order-service</module>
+        <module>0402-apache-dubbo-remote-communication/user-service</module>
+        <module>0402-apache-dubbo-remote-communication/user-service/user-api</module>
+        <module>0402-apache-dubbo-remote-communication/user-service/user-provider</module>
+
+        <module>0403-spring-boot-integration-apache-dubbo</module>
+        <module>0403-spring-boot-integration-apache-dubbo/spring-boot-provider</module>
+        <module>0403-spring-boot-integration-apache-dubbo/spring-boot-provider/sample-api</module>
+        <module>0403-spring-boot-integration-apache-dubbo/spring-boot-provider/sample-provider</module>
+        <module>0403-spring-boot-integration-apache-dubbo/spring-boot-consumer</module>
+
+        <module>0406-spring-cloud-dubbo-in-action</module>
+        <module>0406-spring-cloud-dubbo-in-action/spring-cloud-dubbo-sample-api</module>
+        <module>0406-spring-cloud-dubbo-in-action/spring-cloud-dubbo-sample-provider</module>
+        <module>0406-spring-cloud-dubbo-in-action/spring-cloud-dubbo-sample-consumer</module>
+
+        <module>0502-spring-boot-nacos-usage</module>
+        <module>0502-spring-boot-nacos-usage/spring-boot-nacos-discovery</module>
+        <module>0504-dubbo-nacos-register</module>
+
+        <module>ch0505-spring-cloud-nacos-discovery</module>
+        <module>ch0505-spring-cloud-nacos-discovery/ch0505-spring-cloud-nacos-sample-api</module>
+        <module>ch0505-spring-cloud-nacos-discovery/ch0505-spring-cloud-nacos-sample-provider</module>
+        <module>ch0505-spring-cloud-nacos-discovery/ch0505-spring-cloud-nacos-sample-consumer</module>
+        <module>ch0602-spring-boot-nacos-config</module>
+        <module>ch0603-spring-cloud-nacos-config</module>
+        <module>ch0704-spring-cloud-sentinel-basic-usage</module>
+        <module>ch0705-spring-cloud-sentinel</module>
+        <module>ch0705-spring-cloud-sentinel-dashboard</module>
+        <module>ch0705-spring-cloud-sentinel-custom-url</module>
+    </modules>
+
+    <groupId>wjc.springcloud.alibaba</groupId>
+    <artifactId>spring-cloud-alibaba</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Hoxton.SR9</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter</artifactId>
+                <version>2.2.6.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.8.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+                <version>0.2.7</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>2.7.8</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.7.8</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>2.2.5.RELEASE</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>
