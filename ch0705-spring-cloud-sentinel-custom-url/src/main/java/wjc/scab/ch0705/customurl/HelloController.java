@@ -1,4 +1,4 @@
-package wjc.scab.ch075.customurl;
+package wjc.scab.ch0705.customurl;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
@@ -9,10 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @SentinelResource(value = "hello", blockHandlerClass = CustomUrlBlockHandler.class)
-    @GetMapping("/say")
+    @GetMapping("/hello")
     public String hello() {
         return "hello, WJC";
     }
-
 }

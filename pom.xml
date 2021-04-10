@@ -36,6 +36,7 @@
         <module>ch0705-spring-cloud-sentinel</module>
         <module>ch0705-spring-cloud-sentinel-dashboard</module>
         <module>ch0705-spring-cloud-sentinel-custom-url</module>
+        <module>ch0705-spring-cloud-sentinel-url-clean</module>
     </modules>
 
     <groupId>wjc.springcloud.alibaba</groupId>

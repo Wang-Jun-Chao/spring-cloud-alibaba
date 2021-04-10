@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ch0705-spring-cloud-sentinel-dashboard</artifactId>
+    <artifactId>ch0705-spring-cloud-sentinel-url-clean</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
