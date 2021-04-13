@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ch0706-spring-cloud-sentinel-dynamic-rule
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 192.168.241.128:8858
+      datasource:
+        - nacos:
+            server-addr: 192.168.241.128:8848
+            data-id: ${spring.application.name}-sentinel-flow
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
