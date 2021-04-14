@@ -38,6 +38,11 @@
         <module>ch0705-spring-cloud-sentinel-custom-url</module>
         <module>ch0705-spring-cloud-sentinel-url-clean</module>
         <module>ch0706-spring-cloud-sentinel-dynamic-rule</module>
+
+        <module>ch0708-spring-cloud-sentinel-dubbo-integration</module>
+        <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-api</module>
+        <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-provider</module>
+        <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-consumer</module>
     </modules>
 
     <groupId>wjc.springcloud.alibaba</groupId>
