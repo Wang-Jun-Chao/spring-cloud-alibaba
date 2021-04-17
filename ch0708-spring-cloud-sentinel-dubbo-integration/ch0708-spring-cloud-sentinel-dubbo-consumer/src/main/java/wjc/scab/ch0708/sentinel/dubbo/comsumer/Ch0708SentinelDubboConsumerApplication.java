@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringCloudSentinelDubboConsumerApplication {
+public class Ch0708SentinelDubboConsumerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudSentinelDubboConsumerApplication.class, args);
+		SpringApplication.run(Ch0708SentinelDubboConsumerApplication.class, args);
 	}
 
 }

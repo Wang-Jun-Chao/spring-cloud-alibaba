@@ -1,4 +1,4 @@
-package wjc.scab.ch0708.sentinel.dubbo.provider.func;
+package wjc.scab.ch0708.sentinel.dubbo.provider;
 
 import com.alibaba.csp.sentinel.datasource.ReadableDataSource;
 import com.alibaba.csp.sentinel.datasource.nacos.NacosDataSource;
@@ -13,7 +13,7 @@ import java.util.List;
 public class NacosDataSourceInitFunc implements InitFunc {
     private final String serverAddr = "192.168.241.128:8848";
     private final String groupId = "DEFAULT_GROUP";
-    private final String dataId = "ch0708-spring-cloud-sentinel-dubbo-provider";
+    private final String dataId = "ch0708-spring-cloud-sentinel-dubbo-provider-sentinel-flow";
 
     @Override
     public void init() throws Exception {
