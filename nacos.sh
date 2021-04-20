@@ -19,4 +19,15 @@ docker run -itd -p 8848:8848 \
 docker pull bladex/sentinel-dashboard
 docker run --name sentinel -d -p 8858:8858 -p 8719:8719 -d bladex/sentinel-dashboard
 
+# 安装seata
+# https://blog.csdn.net/qq_38157516/article/details/112973755
+
+# 启动seata
+docker run --name seata-server \
+  -p 8091:8091 \
+  -e SEATA_CONFIG_NAME=file:/root/seata-config/registry \
+  -e SEATA_IP=192.168.241.128 \
+  -v /home/ubuntu/docker/seata/resources:/root/seata-config \
+  -d seataio/seata-server
+
 

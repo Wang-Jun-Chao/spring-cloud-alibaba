@@ -3,7 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <groupId>wjc.springcloud.alibaba</groupId>
+    <artifactId>spring-cloud-alibaba</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+
     <modules>
         <module>0402-apache-dubbo-remote-communication</module>
         <module>0402-apache-dubbo-remote-communication/order-service</module>
@@ -43,11 +55,17 @@
         <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-api</module>
         <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-provider</module>
         <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-consumer</module>
+        <module>ch0805-spring-cloud-seata</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-account-api</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-account-provider</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-common</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-order-api</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-order-provider</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-repo</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-rest-web</module>
     </modules>
 
-    <groupId>wjc.springcloud.alibaba</groupId>
-    <artifactId>spring-cloud-alibaba</artifactId>
-    <version>1.0-SNAPSHOT</version>
+
 
     <dependencyManagement>
         <dependencies>
