@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 
 @Data
-public class OrderRequest implements Serializable{
+public class OrderRequest implements Serializable {
     private static final long serialVersionUID = -4916456555673668661L;
     private String userId;
     private String productCode;

@@ -16,8 +16,9 @@ import wjc.scab.ch0805.seata.common.response.ObjectResponse;
 public interface IAccountService {
     /**
      * 从账户扣款
+     *
      * @param accountDto
      * @return
      */
-    ObjectResponse decreaseAccount(AccountDto accountDto);
+    ObjectResponse<?> decreaseAccount(AccountDto accountDto);
 }

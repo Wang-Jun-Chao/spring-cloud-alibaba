@@ -24,8 +24,10 @@ CREATE TABLE `tbl_repo`
   DEFAULT CHARSET = utf8;
 
 -- 初始数据
-INSERT INTO `tbl_repo`VALUES (1, 'GP20200202001', ' 键盘', '1000');
-INSERT INTO `tbl_repo`VALUES (2, 'GP20200202002', ' 抱枕', '300');
+INSERT INTO `tbl_repo`
+VALUES (1, 'GP20200202001', ' 键盘', '1000');
+INSERT INTO `tbl_repo`
+VALUES (2, 'GP20200202002', ' 抱枕', '300');
 
 -- 对应 seata_account 数据库
 CREATE TABLE `tbl_account`
@@ -38,4 +40,5 @@ CREATE TABLE `tbl_account`
   DEFAULT CHARSET = utf8;
 
 -- 初始数据
-INSERT INTO `tbl_account` VALUES (1, '1001','10000.00');
+INSERT INTO `tbl_account`
+VALUES (1, '1001', '10000.00');

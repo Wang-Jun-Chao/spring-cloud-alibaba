@@ -1,7 +1,6 @@
 https://blog.csdn.net/qq853632587/article/details/111644295
 https://blog.csdn.net/liuqinglong_along/article/details/52191382
 
-
 ```shell
 sh seata-nacos-config.sh \
   -h localhost \

@@ -16,6 +16,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: wjc.springcloud.alibaba:ch0805-seata-account:1.0-SNAPSHOT" level="project" />
     <orderEntry type="module" module-name="ch0805-seata-account-api" />
     <orderEntry type="module" module-name="ch0805-seata-common" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.3.8.RELEASE" level="project" />
