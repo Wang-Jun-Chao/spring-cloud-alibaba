@@ -90,3 +90,7 @@ seata:
     support:
       spring:
         datasource-autoproxy: true
+
+nacos:
+  discovery:
+    server-addr: ${service_ip}:8848

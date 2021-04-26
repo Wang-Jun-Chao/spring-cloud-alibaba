@@ -42,3 +42,19 @@ CREATE TABLE `tbl_account`
 -- 初始数据
 INSERT INTO `tbl_account`
 VALUES (1, '1001', '10000.00');
+
+-- 三库都创建表
+CREATE TABLE `undo_log`
+(
+    `id`             BIGINT(20)   NOT NULL AUTO_INCREMENT,
+    `branch_id`      BIGINT(20)   NOT NULL,
+    `xid`            VARCHAR(100) NOT NULL,
+    `context`        VARCHAR(128) NOT NULL,
+    `rollback _info` LONGBLOB     NOT NULL,
+    `log_status`     INT(11)      NOT NULL,
+    `log_created`   DATETIME     NOT NULL,
+    `log_modified`   DATETIME     NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `ux_undo_log` (`xid`, `branch_id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
