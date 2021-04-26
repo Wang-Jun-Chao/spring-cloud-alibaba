@@ -56,12 +56,13 @@
         <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-provider</module>
         <module>ch0708-spring-cloud-sentinel-dubbo-integration/ch0708-spring-cloud-sentinel-dubbo-consumer</module>
         <module>ch0805-spring-cloud-seata</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-common</module>
         <module>ch0805-spring-cloud-seata/ch0805-seata-account-api</module>
         <module>ch0805-spring-cloud-seata/ch0805-seata-account-provider</module>
-        <module>ch0805-spring-cloud-seata/ch0805-seata-common</module>
         <module>ch0805-spring-cloud-seata/ch0805-seata-order-api</module>
         <module>ch0805-spring-cloud-seata/ch0805-seata-order-provider</module>
-        <module>ch0805-spring-cloud-seata/ch0805-seata-repo</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-repo-api</module>
+        <module>ch0805-spring-cloud-seata/ch0805-seata-repo-provider</module>
         <module>ch0805-spring-cloud-seata/ch0805-seata-rest-web</module>
     </modules>
 
@@ -119,11 +120,6 @@
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>2.7.8</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>2.2.5.RELEASE</version>
             </dependency>
 
         </dependencies>

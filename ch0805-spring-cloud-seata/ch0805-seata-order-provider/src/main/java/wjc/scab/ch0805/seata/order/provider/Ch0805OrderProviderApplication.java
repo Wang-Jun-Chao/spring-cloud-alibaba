@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan(basePackages = "wjc.scab.ch0805.seata.order.provider.dal")
 @SpringBootApplication
-public class OrderProviderApplication {
+public class Ch0805OrderProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderProviderApplication.class, args);
+        SpringApplication.run(Ch0805OrderProviderApplication.class, args);
     }
 
 }

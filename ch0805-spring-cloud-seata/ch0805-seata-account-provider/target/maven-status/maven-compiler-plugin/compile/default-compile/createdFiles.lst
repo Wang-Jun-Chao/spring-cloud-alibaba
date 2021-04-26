@@ -1,0 +1,4 @@
+wjc\scab\ch0805\seata\account\provider\dal\entitys\Account.class
+wjc\scab\ch0805\seata\account\provider\dal\mappers\AccountMapper.class
+wjc\scab\ch0805\seata\account\provider\impl\AccountServiceImpl.class
+wjc\scab\ch0805\seata\account\provider\Ch0805AccountProviderApplication.class

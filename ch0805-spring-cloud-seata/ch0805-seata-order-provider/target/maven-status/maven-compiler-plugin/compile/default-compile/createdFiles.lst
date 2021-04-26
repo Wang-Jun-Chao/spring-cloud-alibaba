@@ -1,0 +1,6 @@
+wjc\scab\ch0805\seata\order\provider\impl\OrderServiceImpl.class
+wjc\scab\ch0805\seata\order\provider\dal\entitys\Order.class
+wjc\scab\ch0805\seata\order\provider\dal\mappers\OrderMapper.class
+wjc\scab\ch0805\seata\order\provider\convert\OrderConvert.class
+wjc\scab\ch0805\seata\order\provider\Ch0805OrderProviderApplication.class
+wjc\scab\ch0805\seata\order\provider\convert\OrderConvertImpl.class

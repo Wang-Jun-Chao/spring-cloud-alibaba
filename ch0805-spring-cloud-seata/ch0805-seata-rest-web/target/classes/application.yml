@@ -1,16 +1,19 @@
-service_ip: 
-dubbo:
-  registry:
-    address: nacos://192.168.216.128:8848
-  scan:
-      base-packages: com.gupaoedu.seata.web.samplerestweb.controller
+service_ip: 192.168.241.128
+
 spring:
   application:
-    name: sample-rest-web
+    name: ch0805-seata-rest-web
+
+dubbo:
+  registry:
+    address: nacos://${service_ip}:8848
+  scan:
+    base-packages: wjc.scab.ch0805.seata.rest.web.controller
+
 
 seata:
   enabled: true
-  tx-service-group: sample-rest-web
+  tx-service-group: ${spring.application.name}
   transport:
     type: TCP
     server: NIO
@@ -60,4 +63,4 @@ seata:
     type: nacos
     nacos:
       cluster: default
-      server-addr: 192.168.216.128:8848
+      server-addr: ${service_ip}:8848

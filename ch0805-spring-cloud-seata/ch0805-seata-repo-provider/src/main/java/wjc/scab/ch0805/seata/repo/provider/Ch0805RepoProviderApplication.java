@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan(basePackages = "wjc.scab.ch0805.seata.repo.provider.dal.mappers")
 @SpringBootApplication
-public class RepoProviderApplication {
+public class Ch0805RepoProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RepoProviderApplication.class, args);
+        SpringApplication.run(Ch0805RepoProviderApplication.class, args);
     }
 
 }

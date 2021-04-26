@@ -1,0 +1,4 @@
+wjc\scab\ch0805\seata\repo\provider\Ch0805RepoProviderApplication.class
+wjc\scab\ch0805\seata\repo\provider\impl\RepoServiceImpl.class
+wjc\scab\ch0805\seata\repo\provider\dal\entitys\Repo.class
+wjc\scab\ch0805\seata\repo\provider\dal\mappers\RepoMapper.class

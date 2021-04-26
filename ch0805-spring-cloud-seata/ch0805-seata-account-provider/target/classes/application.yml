@@ -1,15 +1,17 @@
-service_id: 192.168.241.128
+service_ip: 192.168.241.128
 spring:
   datasource:
     username: root
     password: 123456
     url: jdbc:mysql://${service_ip}:3306/seata_account?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   application:
     name: ch0805-seata-account-provider
+
 mybatis:
   mapper-locations: classpath*:wjc/scab/ch0805/seata/account/provider/dal/mappers/*Mapper.xml
   type-aliases-package: wjc.scab.ch0805.seata.account.provider.dal.entitys
+
 dubbo:
   application:
     name: ${spring.application.name}
@@ -20,9 +22,11 @@ dubbo:
     port: 20882
   scan:
     base-packages: wjc.scab.ch0805.seata.account.provider.impl
+
 seata:
   enabled: true
-  #tx-service-group: sample-account-service
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
   transport:
     type: TCP
     server: NIO
@@ -43,10 +47,28 @@ seata:
     serialization: seata
     compressor: none
   service:
-    vgroup-mapping: default
+    vgroupMapping:
+      default: ${spring.application.name}
     enable-degrade: false
     disable-global-transaction: false
     #grouplist: 192.168.216.128:8091
+  config:
+    type: nacos
+    nacos:
+      #需要和server在同一个注册中心下
+      serverAddr: ${service_ip}:8848
+      #需要server端(registry和config)、nacos配置client端(registry和config)保持一致
+      group: SEATA_GROUP
+      namespace: e1250570-24fc-47c9-973d-fda5b0a09077
+  registry:
+    type: nacos
+    nacos:
+      #需要和server端保持一致，即server在nacos中的名称，默认为seata-server
+      application: seata-server
+      serverAddr: ${service_ip}:8848
+      #需要server端(registry和config)、nacos配置client端(registry和config)保持一致
+      group: SEATA_GROUP
+      namespace: e1250570-24fc-47c9-973d-fda5b0a09077
   client:
     rm:
       lock:
@@ -68,8 +90,8 @@ seata:
     support:
       spring:
         datasource-autoproxy: true
-  registry:
-    type: nacos
-    nacos:
-      cluster: default
-      server-addr: 192.168.216.128:8848
+
+nacos:
+  discovery:
+    server-addr: ${service_ip}:8848
+

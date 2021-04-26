@@ -3,10 +3,10 @@ https://blog.csdn.net/liuqinglong_along/article/details/52191382
 
 ```shell
 sh seata-nacos-config.sh \
-  -h localhost \
+  -h 192.168.241.128 \
   -p 8848 \
-  -g DEFAULT_GROUP \
-  -t 2eb41840-5690-43a3-a768-a2925814cb45 \
+  -g SEATA_GROUP \
+  -t e1250570-24fc-47c9-973d-fda5b0a09077 \
   -u nacos \
   -w nacos
   
