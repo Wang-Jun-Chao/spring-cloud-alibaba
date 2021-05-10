@@ -7,7 +7,7 @@ import wjc.scab.ch0805.seata.order.provider.dal.entitys.Order;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-04-25T18:29:20+0800",
+    date = "2021-05-10T20:33:39+0800",
     comments = "version: 1.3.1.Final, compiler: javac, environment: Java 1.8.0_144 (Oracle Corporation)"
 )
 @Component

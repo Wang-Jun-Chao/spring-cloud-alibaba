@@ -14,11 +14,7 @@ import wjc.scab.ch0805.seata.common.response.ObjectResponse;
 import wjc.scab.ch0805.seata.order.api.IOrderService;
 import wjc.scab.ch0805.seata.repo.api.IRepoService;
 
-/**
- * @Author: heshouyou
- * @Description Dubbo业务发起方逻辑
- * @Date Created in 2019/1/14 18:36
- */
+
 @Slf4j
 @Service
 public class RestOrderServiceImpl implements IRestOrderService {
